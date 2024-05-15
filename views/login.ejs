@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+            margin-top: 30px;
+            color: aliceblue;
+      }
+
+      div {
+        /* text-align: center; */
+        margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+      }
+
+      form {
+        width: 300px;
+        background-color: #1e1e1e;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(88, 138, 255, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #666;
+      }
+
+      input[type="email"],
+      input[type="password"],
+      button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button[type="submit"] {
+        background-color: #4c56af;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #25399a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+
+    <div>
+      <form method="post" action="/user/login">
+        <label for="">Enter Email</label>
+        <input type="email" placeholder="Email" name="email" required />
+
+        <label for="">Enter Password</label>
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
